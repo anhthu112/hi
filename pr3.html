@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sidebar và Content</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+
+  <link rel="stylesheet" href="pr1.css">
+  <style>
+    .sidebar {
+      /* background-color: #f8f9fa; */
+      height: 100vh;
+      /* width: 200px; */
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2 sidebar">
+        <!-- Nội dung của sidebar -->
+        <div class="logo">
+            <img src="/VRMALL/assets/img/logo.png" alt="Logo" width="100">
+          </div>
+
+      </div>
+      <div class="col-md-10 content">
+        <div class="content-header">
+          <div class="header">
+            <div class="actions">
+                <i class="fas fa-credit-card"></i>
+                GÓI TÀI KHOẢN
+            </div>
+            <div class="actions">
+              <button class="create-store btn btn-primary">                <i class="fas fa-plus"></i>
+                Tạo cửa hàng</button>
+              <div class="account">
+                <img src="/VRMALL/assets/img/pic1.jpg"  class="user-avatar" >
+                vr360admin
+              </div>
+            </div>
+          </div>
+        <!-- </div> -->
+        <!-- Nội dung của phần nội dung -->
+      </div>
+      <div class="main">
+        <h1>Vui lòng chọn gói phù hợp với bạn</h1>
+        <div class="options">
+            <div class="option o1"  onclick="changeColor(this)">Option 1</div>
+            <div class="option o2"  onclick="changeColor(this)">Option 2</div>
+          </div>
+        <div class="row packages">
+          <div class="col-md-4 col-sm-12">
+            <div class="box">
+              <div class="package">Gói</div>
+              <div class="package-type">Basic</div>
+              <div class="price">Miễn phí</div>
+              <div class="box-content">
+                <p>Không gian trưng bày</p>
+                <ul>
+                    <li>Tạo được một cửa hàng</li>
+                    <li>Sử dụng mẫu cửa hàng trưng bày được 6 đến 9 sản phẩm</li>
+                    <li>Đặt cửa hàng vào vị trí vrMall</li>
+                </ul>
+                <p>Tính năng</p>
+                <ul>
+                    <li>Bộ tính năng cơ bản của vrStore</li>
+                </ul>
+                <p>Tính năng</p>
+                <ul>
+                    <li>Không quá 50M dữ liệu (video, hình ảnh, tệp, âm thanh)e</li>
+                </ul>
+              </div>
+              <!-- Nội dung khung 1 -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="box">
+                <div class="package">Gói</div>
+                <div class="package-type">Basic</div>
+                <div class="price">Miễn phí</div>
+                <div class="box-content">
+                  <p>Không gian trưng bày</p>
+                  <ul>
+                      <li>Tạo được một cửa hàng</li>
+                      <li>Sử dụng mẫu cửa hàng trưng bày được 6 đến 9 sản phẩm</li>
+                      <li>Đặt cửa hàng vào vị trí vrMall</li>
+                  </ul>
+                  <p>Tính năng</p>
+                  <ul>
+                      <li>Bộ tính năng cơ bản của vrStore</li>
+                  </ul>
+                  <p>Tính năng</p>
+                  <ul>
+                      <li>Không quá 50M dữ liệu (video, hình ảnh, tệp, âm thanh)e</li>
+                  </ul>
+                </div>
+                <!-- Nội dung khung 1 -->
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="box">
+                <div class="package">Gói</div>
+                <div class="package-type">Basic</div>
+                <div class="price">Miễn phí</div>
+                <div class="box-content">
+                  <p>Không gian trưng bày</p>
+                  <ul>
+                      <li>Tạo được một cửa hàng</li>
+                      <li>Sử dụng mẫu cửa hàng trưng bày được 6 đến 9 sản phẩm</li>
+                      <li>Đặt cửa hàng vào vị trí vrMall</li>
+                  </ul>
+                  <p>Tính năng</p>
+                  <ul>
+                      <li>Bộ tính năng cơ bản của vrStore</li>
+                  </ul>
+                  <p>Tính năng</p>
+                  <ul>
+                      <li>Không quá 50M dữ liệu (video, hình ảnh, tệp, âm thanh)e</li>
+                  </ul>
+                </div>
+                <!-- Nội dung khung 1 -->
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+    function changeColor(element) {
+      var options = document.querySelectorAll('.option');
+      options.forEach(function(option) {
+        option.classList.remove('active');
+      });
+      element.classList.add('active');
+    }
+  </script>
+</body>
+</html>
